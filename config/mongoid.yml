@@ -1,0 +1,34 @@
+development:
+#    host: ds031587.mongolab.com
+#    port: 31587
+#    username: jedhassell
+#    password: dbpassword
+#    database: tweets
+  host: localhost
+  database: twitter
+
+test:
+  host: localhost
+  database: twitter_test
+
+# set these environment variables on your prod server
+production:
+  uri: <%= ENV['MONGOLAB_URI'] %>
+#    host: ds031407.mongolab.com
+#    port: 31407
+#    username: jedhassell
+#    password: dbpassword
+#    database: tweets
+
+
+
+#  host: <%= ENV['MONGOID_HOST'] %>
+#  port: <%= ENV['MONGOID_PORT'] %>
+#  username: <%= ENV['MONGOID_USERNAME'] %>
+#  password: <%= ENV['MONGOID_PASSWORD'] %>
+#  database: <%= ENV['MONGOID_DATABASE'] %>
+  # slaves:
+  #   - host: slave1.local
+  #     port: 27018
+  #   - host: slave2.local
+  #     port: 27019

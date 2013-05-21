@@ -1,0 +1,23 @@
+= \Welcome to TweetStreamer
+
+TweetStreamer is a Rails app that uses EventMachine to process Twitter's
+Streaming API.  You can view the results on the home page or you can view
+them on a Google Map.
+
+demo :: http://tweetstreamer.herokuapp.com
+
+
+== Getting Started
+
+1. Configure your mongoid.yml to point to your local MongoDB installation.
+
+2. Create indexes.
+    rake db:mongoid:create_indexes
+
+3. Begin parsing the Twitter Streaming API with Fibers or not.
+    rake twitter:get_tweets_with_fiber
+   or
+    rake twitter:get_tweets
+
+4. Run your server!
+    rails server
